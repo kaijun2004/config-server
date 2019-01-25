@@ -1,0 +1,19 @@
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server1:8761/eureka/,http://eureka-server2:8762/eureka/,http://eureka-server3:8761/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/kaijun2004/config-repo.git
+          username: kaijun2004
+          password: @!yuan@!7758258@!kai@!
+server:
+  port: 9000

@@ -14,6 +14,16 @@ spring:
         git:
           uri: https://github.com/kaijun2004/config-repo.git
           username: kaijun2004
-          password: @!yuan@!7758258@!kai@!
+          password:
+  rabbitmq:
+    host: 123.206.105.110
+    port: 5672
+    username: kaijun.yuan
+    password:
 server:
   port: 9000
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
